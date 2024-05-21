@@ -9,7 +9,14 @@ namespace Game
         [SerializeField] private float _speed;
         [SerializeField] private Animator _animator;
 
-        private void Update()
+        private Rigidbody2D _rb;
+
+        private void Awake()
+        {
+            _rb = GetComponent<Rigidbody2D>();
+        }
+
+        private void FixedUpdate()
         {
             var input = GameManager.Input.Player.Move.ReadValue<Vector2>();
 
@@ -20,13 +27,13 @@ namespace Game
             }
 
             _animator.SetBool("IsMoving", true);
-            transform.Translate(_speed * Time.deltaTime * input);
+            _rb.MovePosition(_rb.position + _speed * Time.fixedDeltaTime * input);
 
             // look direction
             if (input.x < -Mathf.Epsilon)
-                _animator.transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(-1, 1, 1);
             else if (input.x > Mathf.Epsilon)
-                _animator.transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(1, 1, 1);
         }
     }
 }
