@@ -10,6 +10,7 @@ namespace Game
         [SerializeField] private Animator _animator;
 
         private Rigidbody2D _rb;
+        private TLookDirection _lookDirection = TLookDirection.Rigth;
 
         private void Awake()
         {
@@ -18,6 +19,8 @@ namespace Game
 
         private void FixedUpdate()
         {
+            if (GameManager.State != TState.FreeRoam) return;
+
             var input = GameManager.Input.Player.Move.ReadValue<Vector2>();
 
             if (input.sqrMagnitude < Mathf.Epsilon)
@@ -31,9 +34,18 @@ namespace Game
 
             // look direction
             if (input.x < -Mathf.Epsilon)
+            {
                 transform.localScale = new Vector3(-1, 1, 1);
+                _lookDirection = TLookDirection.Left;
+            }
             else if (input.x > Mathf.Epsilon)
+            {
                 transform.localScale = new Vector3(1, 1, 1);
+                _lookDirection = TLookDirection.Rigth;
+            }
+                
         }
+
+        public TLookDirection LookDirection => _lookDirection;
     }
 }

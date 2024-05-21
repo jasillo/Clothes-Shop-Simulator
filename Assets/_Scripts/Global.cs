@@ -10,4 +10,16 @@ namespace Game
         Weapon,
         Consumable
     }
+
+    public enum TLookDirection
+    {
+        Left,
+        Rigth
+    }
+
+    public enum TState
+    {
+        FreeRoam,
+        Dialog
+    }
 }
