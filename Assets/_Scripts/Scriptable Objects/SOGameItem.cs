@@ -15,7 +15,7 @@ namespace Game
         [SerializeField] private int _code;
 
         public TGameItem Type => _type;
-        public string Name => _name;
+        public string ItemName => _name;
         public Sprite[] Icons => _icons;
         public int Price => _price;
 

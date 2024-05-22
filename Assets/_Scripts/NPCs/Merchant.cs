@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Game
 {
@@ -9,26 +10,28 @@ namespace Game
     /// </summary>
     public class Merchant : MonoBehaviour
     {
+        [SerializeField] private Sprite _avatarIcon;
+        [SerializeField] private string _greetingMsm;
         [SerializeField] private GameObject _interactionMark;
-        [SerializeField] private GameObject _panel;
+        [SerializeField] private SOGameItem[] _products;
 
         private void Awake()
         {
             _interactionMark.SetActive(false);
-            _panel.SetActive(false);
         }
 
-        public void ShowPanel()
+        public void Interact()
         {
-            
+            if (_products.Length > 0)
+            {
+                var storeScreen = StoreScreen.Instance;
+
+                storeScreen.Data = _products;
+                storeScreen.SetMerchantData(icon: _avatarIcon, greeting: _greetingMsm);
+                storeScreen.ActiveScreen(true);
+            }
         }
 
-        private void HidePanel()
-        {
-            _panel.SetActive(false);
-            GameManager.State = TState.Dialog;
-        }
-
-        public void InteractMark(bool value) => _interactionMark.SetActive(value);
+        public void InteractionMark(bool value) => _interactionMark.SetActive(value);
     }
 }

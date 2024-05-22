@@ -43,16 +43,16 @@ namespace Game
                 // show the interactable mark
                 var npc = npcCol.GetComponent<Merchant>();
                 if (npc != _currentNpc && _currentNpc != null)
-                    _currentNpc.InteractMark(false);
+                    _currentNpc.InteractionMark(false);
                 _currentNpc = npc;
-                _currentNpc.InteractMark(true);
+                _currentNpc.InteractionMark(true);
             }
             else 
             {
                 // hide the interactable mark 
                 if ( _currentNpc != null)
                 {
-                    _currentNpc.InteractMark(false);
+                    _currentNpc.InteractionMark(false);
                     _currentNpc = null;
                 }
             }
@@ -60,7 +60,7 @@ namespace Game
             // if interact button is pressed and npc is in front
             if (_currentNpc != null && GameManager.Input.Player.Interact.WasPressedThisFrame())
             {
-                _currentNpc.ShowPanel();
+                _currentNpc.Interact();
             }
         }
 
