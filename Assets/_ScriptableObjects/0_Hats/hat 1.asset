@@ -15,6 +15,7 @@ MonoBehaviour:
   _type: 0
   _name: Green Hood
   _icons:
+  - {fileID: 21300000, guid: 73871143a00432e4c828dd81b0394233, type: 3}
   - {fileID: 21300000, guid: f7e7bed775fff8347b9e53c67e20875f, type: 3}
   _price: 25
   _code: 0

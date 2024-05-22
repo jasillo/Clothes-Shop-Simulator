@@ -15,6 +15,7 @@ MonoBehaviour:
   _type: 0
   _name: Red Hood
   _icons:
+  - {fileID: 21300000, guid: 9bad067133245ba43b6bd589b8022abe, type: 3}
   - {fileID: 21300000, guid: 20eb058aea3c3a744bb5d47a1610550a, type: 3}
   _price: 75
   _code: 0

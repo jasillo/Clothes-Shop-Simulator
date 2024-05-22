@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c1c097ac1241d147a63980cf7c13d8d, type: 3}
-  m_Name: torso 2
+  m_Name: weapon
   m_EditorClassIdentifier: 
   _type: 0
-  _name: Torso 3
+  _name: Weapon 1
   _icons:
-  - {fileID: 21300000, guid: 125aefec530dad14dbbadc2cef465ae8, type: 3}
-  - {fileID: 21300000, guid: 124013dbba7f284489ac16156c930131, type: 3}
-  - {fileID: 21300000, guid: 0c6412d95175c2b40bd9a27f7d1fa096, type: 3}
-  _price: 170
-  _code: 1
+  - {fileID: 21300000, guid: 24191a5bcedc82b4b90d0dc2f2ac4ba2, type: 3}
+  - {fileID: 21300000, guid: f8d916881a19b7a4a99ec74753414a40, type: 3}
+  _price: 75
+  _code: 5

@@ -15,6 +15,8 @@ MonoBehaviour:
   _type: 0
   _name: Torso 4
   _icons:
+  - {fileID: 21300000, guid: 36330881d2a8f9f4f987fa58593449bf, type: 3}
   - {fileID: 21300000, guid: 3d9056df586b6024fbc5b9fee2433eef, type: 3}
+  - {fileID: 21300000, guid: 4807dc8cba98f89409729f6aac2945a7, type: 3}
   _price: 170
   _code: 1

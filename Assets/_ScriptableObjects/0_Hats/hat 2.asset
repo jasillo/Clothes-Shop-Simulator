@@ -15,6 +15,7 @@ MonoBehaviour:
   _type: 0
   _name: Blue Hood
   _icons:
+  - {fileID: 21300000, guid: d6f549fab9d22b747badeb6424f57054, type: 3}
   - {fileID: 21300000, guid: ae2d3e3bacfacde4981510b116293dba, type: 3}
   _price: 50
   _code: 0

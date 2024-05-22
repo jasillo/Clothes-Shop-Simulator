@@ -215,6 +215,7 @@ namespace Game
         {
             // save data in the inventory
             Inventory.Instance.Data = new (_inventorySource);
+            Inventory.Instance.Gold = _gold;
             ActiveScreen(false);
         }
     }

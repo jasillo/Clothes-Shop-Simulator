@@ -15,6 +15,7 @@ MonoBehaviour:
   _type: 0
   _name: Brown Hood
   _icons:
+  - {fileID: 21300000, guid: 92badf55f39e3534db5b6d120abe4eb4, type: 3}
   - {fileID: 21300000, guid: 468244f274f38f64b85773c7888444b6, type: 3}
   _price: 25
   _code: 0

@@ -173,22 +173,22 @@ namespace Game
             switch (equipType)
             {
                 case TEquip.Helmet:
-                    _avatarPreview.SetHook(item.Icon(1));
+                    _avatarPreview.SetHelmet(item);
                     break;
                 case TEquip.Armor:
-                    _avatarPreview.SetBodyArmor(item.Icon(1), item.Icon(2));
+                    _avatarPreview.SetBodyArmor(item);
                     break;
                 case TEquip.Shoulder:
-                    _avatarPreview.SetShoulder(item.Icon(1), item.Icon(2));
+                    _avatarPreview.SetShoulder(item);
                     break;
                 case TEquip.Glove:
-                    _avatarPreview.SetGlove(item.Icon(1), item.Icon(2), item.Icon(3), item.Icon(4));
+                    _avatarPreview.SetGlove(item);
                     break;
                 case TEquip.Boots:
-                    _avatarPreview.SetBoots(item.Icon(1), item.Icon(2));
+                    _avatarPreview.SetBoots(item);
                     break;
                 case TEquip.Weapon:
-                    _avatarPreview.SetWeapon(item.Icon(1));
+                    _avatarPreview.SetWeapon(item);
                     break;
             }
         }
@@ -197,7 +197,11 @@ namespace Game
 
         private void Prev() => RenderContainers(_currentPage - 1);
         private void Close() => ActiveScreen(false);
-
-        public int Gold => _currentGold;
+        
+        public int Gold
+        {
+            get => _currentGold;
+            set => _currentGold = value;
+        }
     }
 }
