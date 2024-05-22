@@ -13,7 +13,7 @@ namespace Game
         [SerializeField] private Sprite _avatarIcon;
         [SerializeField] private string _greetingMsm;
         [SerializeField] private GameObject _interactionMark;
-        [SerializeField] private SOGameItem[] _products;
+        [SerializeField] private List<SOGameItem> _products;
 
         private void Awake()
         {
@@ -22,11 +22,11 @@ namespace Game
 
         public void Interact()
         {
-            if (_products.Length > 0)
+            if (_products.Count > 0)
             {
                 var storeScreen = StoreScreen.Instance;
 
-                storeScreen.Data = _products;
+                storeScreen.StoreData = _products;
                 storeScreen.SetMerchantData(icon: _avatarIcon, greeting: _greetingMsm);
                 storeScreen.ActiveScreen(true);
             }
