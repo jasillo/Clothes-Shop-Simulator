@@ -112,7 +112,7 @@ namespace Game
                     var name = container.GetChild(1).GetComponent<TMP_Text>();
                     var price = container.GetChild(2).GetChild(0).GetComponent<TMP_Text>();
 
-                    icon.sprite = _dataSource[dataIndex].Icons[0];
+                    icon.sprite = _dataSource[dataIndex].Icon(0);
                     name.text = _dataSource[dataIndex].ItemName;
                     price.text = _dataSource[dataIndex].Price.ToString();
                 }
@@ -126,6 +126,9 @@ namespace Game
             _pagesTxt.text = string.Format("Page {0}/{1}", _currentPage + 1, _pagesCount);
         }
 
+        /// <summary>
+        /// activate the menu screen
+        /// </summary>
         public void ActiveScreen(bool value)
         {
             _mainPanel.SetActive(value);

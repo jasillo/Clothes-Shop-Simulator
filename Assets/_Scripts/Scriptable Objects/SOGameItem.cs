@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace Game
 {
@@ -16,10 +17,16 @@ namespace Game
 
         public TGameItem Type => _type;
         public string ItemName => _name;
-        public Sprite[] Icons => _icons;
         public int Price => _price;
 
         public int Code => _code;
+        public Sprite Icon(int index)
+        {
+            Assert.IsFalse(_icons.Length == 0, "No icons included in game item");
+
+            index = Mathf.Clamp(index, 0, _icons.Length - 1);
+            return _icons[index];
+        }
     }
 
     

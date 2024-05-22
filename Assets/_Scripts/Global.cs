@@ -22,4 +22,14 @@ namespace Game
         FreeRoam,
         Dialog
     }
+
+    public enum TEquip
+    {
+        Helmet = 0,
+        Armor = 1,
+        Shoulder = 2,
+        Glove = 3,
+        Boots = 4,
+        Weapon = 5
+    }
 }
