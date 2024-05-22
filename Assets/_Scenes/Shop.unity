@@ -2933,11 +2933,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2145555052089809231, guid: 78035895a987d884b988163f950cdc73, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278523950
+      value: 4278323990
       objectReference: {fileID: 0}
     - target: {fileID: 2757829109701865526, guid: 78035895a987d884b988163f950cdc73, type: 3}
       propertyPath: m_Name
       value: Canvas_Inventory Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676488614905710686, guid: 78035895a987d884b988163f950cdc73, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278387482
       objectReference: {fileID: 0}
     - target: {fileID: 7369109980305162439, guid: 78035895a987d884b988163f950cdc73, type: 3}
       propertyPath: _avatarPreview
@@ -3138,6 +3142,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1254339020236052311, guid: ff624d73a29322e498bfe9de7dc6d616, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8849652888667519908, guid: d8a6a37fc61b588419889618cc29c4fa, type: 2}
+    - target: {fileID: 1441412935113330586, guid: ff624d73a29322e498bfe9de7dc6d616, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8849652888667519908, guid: d8a6a37fc61b588419889618cc29c4fa, type: 2}
+    - target: {fileID: 4404036830464793523, guid: ff624d73a29322e498bfe9de7dc6d616, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8849652888667519908, guid: d8a6a37fc61b588419889618cc29c4fa, type: 2}
     - target: {fileID: 5075253475627057612, guid: ff624d73a29322e498bfe9de7dc6d616, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3218,6 +3234,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5795089099872498615, guid: ff624d73a29322e498bfe9de7dc6d616, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8849652888667519908, guid: d8a6a37fc61b588419889618cc29c4fa, type: 2}
+    - target: {fileID: 8751320435106342814, guid: ff624d73a29322e498bfe9de7dc6d616, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8849652888667519908, guid: d8a6a37fc61b588419889618cc29c4fa, type: 2}
+    - target: {fileID: 8942543906900344659, guid: ff624d73a29322e498bfe9de7dc6d616, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8849652888667519908, guid: d8a6a37fc61b588419889618cc29c4fa, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
